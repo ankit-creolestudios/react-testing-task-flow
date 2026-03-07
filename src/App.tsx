@@ -1,14 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { Button } from './components/ui/button'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
    <div>
-      <h3>TaskFlow Pro</h3>
+      <h3 className='text-amber-500'>TaskFlow Pro</h3>
+       <div className="flex h-screen items-center justify-center">
+      <Button>Click me</Button>
+    </div>
     </div>
   )
 }
