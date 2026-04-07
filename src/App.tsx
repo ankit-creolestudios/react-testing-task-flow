@@ -1,13 +1,21 @@
+import GetByMethods from './components/testing/GetByMethods';
+import QueryByMethods from './components/testing/QueryByMethods';
+import FindByMethods from './components/testing/FindByMethods';
 import './App.css'
-import { Button } from './components/ui/button'
 
 function App() {
   return (
-   <div>
-      <h3 className='text-amber-500'>TaskFlow Pro</h3>
-       <div className="flex h-screen items-center justify-center">
-      <Button>Click me</Button>
-    </div>
+    <div className="min-h-screen bg-background p-8 max-w-2xl mx-auto space-y-8">
+      <header className="text-center">
+        <h1 className="text-4xl font-extrabold tracking-tight text-amber-500">TaskFlow Pro</h1>
+        <p className="text-muted-foreground mt-2">Testing Demonstration Components</p>
+      </header>
+
+      <main className="space-y-6">
+        <GetByMethods />
+        <QueryByMethods />
+        <FindByMethods />
+      </main>
     </div>
   )
 }
